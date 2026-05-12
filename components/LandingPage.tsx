@@ -53,62 +53,62 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* ============ HERO — SPLIT SCREEN ============ */}
-      <section className="hero">
-        {/* Pink half */}
-        <div className="hero-half hero-pink">
-          <div className="hero-half-content">
-            <div className="hero-half-eyebrow">
-              <span className="hero-half-line" />
-              <span>From <em>her</em>.</span>
+      {/* ============ HERO — Brand statement on top, quotes breathe below ============ */}
+      <section className="hero-v2">
+        <div className="hero-v2-intro">
+          <div className="hero-v2-eyebrow">— OtherSide —</div>
+          <h1 className="hero-v2-title">
+            Both sides<br />
+            <em>of every question.</em>
+          </h1>
+          <p className="hero-v2-sub">
+            Anonymous Q&amp;A between the genders. Ask honestly. Get answered honestly. No profiles to perform for.
+          </p>
+        </div>
+
+        <div className="hero-v2-split">
+          {/* Pink half */}
+          <div className="hero-half hero-pink">
+            <div className="hero-half-content">
+              <div className="hero-half-eyebrow">
+                <span className="hero-half-line" />
+                <span>From <em>her</em>.</span>
+              </div>
+              <p className="hero-half-quote">
+                &ldquo;Why does he go cold the second things start to feel real? Genuine question, no judgment, I just need to understand.&rdquo;
+              </p>
+              <div className="hero-half-byline">
+                <span className="hero-half-gtag girl">Girl · 24</span>
+                <span className="hero-half-bymeta">asked yesterday · 38 answers</span>
+              </div>
             </div>
-            <p className="hero-half-quote">
-              &ldquo;Why does he go cold the second things start to feel real? Genuine question, no judgment, I just need to understand.&rdquo;
-            </p>
-            <div className="hero-half-byline">
-              <span className="hero-half-gtag girl">Girl · 24</span>
-              <span className="hero-half-bymeta">asked yesterday · 38 answers</span>
+          </div>
+
+          {/* Blue half */}
+          <div className="hero-half hero-blue">
+            <div className="hero-half-content">
+              <div className="hero-half-eyebrow right">
+                <span>From <em>him</em>.</span>
+                <span className="hero-half-line" />
+              </div>
+              <p className="hero-half-quote">
+                &ldquo;Because the moment something feels real I realise I have no idea what I&apos;m doing, and panicking quietly looks the same as not caring.&rdquo;
+              </p>
+              <div className="hero-half-byline right">
+                <span className="hero-half-bymeta">answered 14h later · top reply</span>
+                <span className="hero-half-gtag guy">Guy · 26</span>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Blue half */}
-        <div className="hero-half hero-blue">
-          <div className="hero-half-content">
-            <div className="hero-half-eyebrow right">
-              <span>From <em>him</em>.</span>
-              <span className="hero-half-line" />
-            </div>
-            <p className="hero-half-quote">
-              &ldquo;Because the moment something feels real I realise I have no idea what I&apos;m doing, and panicking quietly looks the same as not caring.&rdquo;
-            </p>
-            <div className="hero-half-byline right">
-              <span className="hero-half-bymeta">answered 14h later · top reply</span>
-              <span className="hero-half-gtag guy">Guy · 26</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Center seam card */}
-        <div className="hero-seam">
-          <div className="hero-seam-card">
-            <div className="hero-seam-eyebrow">— OtherSide —</div>
-            <h1 className="hero-seam-title">
-              Both sides<br />
-              <em>of every question.</em>
-            </h1>
-            <p className="hero-seam-sub">
-              Anonymous Q&amp;A between the genders. Ask honestly. Get answered honestly. No profiles to perform for.
-            </p>
-            <div className="hero-seam-cta">
-              <Link href="/signup" className="hero-seam-primary">
-                Start asking<span className="hero-seam-primary-arrow">→</span>
-              </Link>
-              <Link href="/feed" className="hero-seam-secondary">
-                Or browse →
-              </Link>
-            </div>
-          </div>
+        <div className="hero-v2-cta">
+          <Link href="/signup" className="hero-v2-primary">
+            Start asking <span className="hero-v2-primary-arrow">→</span>
+          </Link>
+          <Link href="/feed" className="hero-v2-secondary">
+            Or browse the feed →
+          </Link>
         </div>
       </section>
 
@@ -287,7 +287,7 @@ export default function LandingPage() {
       <section className="features-section">
         <div className="features-grid">
           {[
-            { glyph: '◐', color: 'pk', title: 'Always gender-tagged', desc: 'Every post and reply shows Girl, Guy, or Non-binary. Never a real name.' },
+            { glyph: '◐', color: 'pk', title: 'Always gender-tagged', desc: 'Every post and reply shows Girl, Guy, or Non-binary. Never a real name unless you choose.' },
             { glyph: '⚭', color: 'vi', title: '1-on-1 matching', desc: 'Get paired anonymously with someone from the other side for 10 honest minutes.' },
             { glyph: '●', color: 'gr', title: 'Six rooms always live', desc: 'Drop into a live room, watch the gender split shift as the conversation moves.' },
             { glyph: '◇', color: 'bl', title: 'Hot takes & polls', desc: 'See exactly how the two sides split on the same question.' },
